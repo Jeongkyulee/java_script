@@ -1,6 +1,6 @@
 const canvas = document.getElementById("jsCanvas");
 const ctx = canvas.getContext("2d");
-const colors = document.getElementsByClassName("controls__color")
+
 
 //const iscolors = document.getElementById("controls__colors")
 
@@ -64,22 +64,3 @@ if (canvas) {
     canvas.addEventListener("mouseup", stoppainting) //click over
     canvas.addEventListener("mouseleave", stoppainting)
 }
-
-function chage_color(event) {
-    ctx.strokeStyle = event.target.style.backgroundColor;
-}
-
-console.log(Array.from(colors))
-
-Array.from(colors).forEach(color => color.addEventListener("click", chage_color));
-
-// function colordown(event) {
-//     console.log(event)
-// }
-
-
-// if (iscolors) {
-//     iscolors.addEventListener("click", function colordown() {
-//         console.log(iscolors.)
-//     })
-// }
